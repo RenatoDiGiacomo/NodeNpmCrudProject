@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="InputData">
+            <h2>Entrada de Dados</h2>
+            <form action="POST" id="enviar">
+                <input type="text" placeholder="Nome Completo" id="nome" required>
+                <input type="text" placeholder="Idade" id="idade" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="ListaData">
+            <h2>Saida de dados de Dados</h2>
+            <button id="getData">Pegar/Atualizar</button>
+            <ul id="list"></ul>
+        </section>
+        <script src="index.js"></script>
+    </main>
+    <div class="loading">
+        <p>Loading</p>
+    </div>
+</body>
+
+</html>
